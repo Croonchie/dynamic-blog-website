@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Post</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header>
+        <h1>View and Edit Post</h1>
+        <a href="index.html">Back to Home</a>
+    </header>
+
+    <main>
+        <div id="post-container">
+            <input type="text" id="post-title" readonly>
+            <textarea id="post-content" rows="5" readonly></textarea>
+            <img id="post-image" style="display: none; max-width: 100%; margin-top: 10px;">
+            <p id="post-date"></p>
+            <button id="edit-btn">Edit</button>
+            <button id="save-btn" style="display: none;">Save</button>
+            <button id="delete-btn" class="delete-button">Delete</button>
+        </div>
+    </main>
+
+    <script src="scripts/post.js"></script>
+</body>
+</html>
+
