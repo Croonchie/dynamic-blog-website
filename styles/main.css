@@ -72,3 +72,27 @@ button:hover {
     background: #0056b3;
 }
 
+#post-title, #post-content {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#post-title:read-only, #post-content:read-only {
+    background: #f4f4f4;
+    border: none;
+}
+
+
+.delete-button {
+    background: red;
+    margin-left: 10px;
+}
+
+.delete-button:hover {
+    background: darkred;
+}
+
