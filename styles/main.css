@@ -85,3 +85,14 @@ button:hover {
     background: #f4f4f4;
     border: none;
 }
+
+
+.delete-button {
+    background: red;
+    margin-left: 10px;
+}
+
+.delete-button:hover {
+    background: darkred;
+}
+

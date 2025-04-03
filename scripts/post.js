@@ -24,6 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const dateElement = document.getElementById("post-date");
     const editButton = document.getElementById("edit-btn");
     const saveButton = document.getElementById("save-btn");
+    const deleteButton = document.getElementById("delete-btn");
 
     // Set values
     titleInput.value = post.title;
@@ -59,5 +60,16 @@ document.addEventListener("DOMContentLoaded", function () {
         alert("Post updated successfully!");
         location.reload();
     });
+
+    // Delete post
+    deleteButton.addEventListener("click", function () {
+        if (confirm("Are you sure you want to delete this post?")) {
+            posts.splice(postId, 1);
+            localStorage.setItem("posts", JSON.stringify(posts));
+            alert("Post deleted successfully!");
+            window.location.href = "index.html";
+        }
+    });
 });
+
 
